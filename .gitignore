@@ -1,0 +1,5 @@
+/sand
+/text
+/test
+*.pyc
+nested_comments_app/.env
