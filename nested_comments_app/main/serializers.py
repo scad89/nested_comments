@@ -62,7 +62,6 @@ class CommentDetailSerializer(serializers.ModelSerializer):
 
 class ArticleCreateSerializer(serializers.ModelSerializer):
     """Добавления новой статьи"""
-
     class Meta:
         model = Article
         fields = ['name_article', 'text_article']
@@ -76,7 +75,7 @@ class ArticleSerializer(serializers.ModelSerializer):
 
 
 class ArticleDetailSerializer(serializers.ModelSerializer):
-    """Вывод детальной информации о статье и комментарии"""
+    """Вывод детальной информации о статье с комментариями до 3-ого уровня вложенности"""
     comments = CommentThirdLevelSerializer(many=True)
 
     class Meta:

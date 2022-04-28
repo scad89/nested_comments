@@ -35,7 +35,7 @@ class NewCommentCreateAPIView(generics.CreateAPIView):
 
 
 class GetCommentDetailRetrieveAPIView(generics.RetrieveAPIView):
-    """Вывод одного комментарияя и его дочерних комментарикв"""
+    """Вывод одного комментария и его дочерних комментариев"""
     queryset = Comment.objects.all()
     serializer_class = CommentDetailSerializer
     lookup_field = 'pk'
