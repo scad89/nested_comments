@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'main',
     'rest_framework',
     'mptt',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
