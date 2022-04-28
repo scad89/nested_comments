@@ -3,3 +3,4 @@
 /test
 *.pyc
 nested_comments_app/.env
+nested_comments_app/.env_docker
